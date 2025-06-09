@@ -1,0 +1,18 @@
+spring:
+  ai:
+    anthropic:
+      api-key: ${KEY}
+    mcp:
+      client:
+        type: SYNC
+        toolcallback:
+          enabled: true
+        stdio:
+          servers-configuration: classpath:mcp-servers.json
+
+
+logging:
+  level:
+    org.springframework.ai.mcp: DEBUG
+    io.modelcontextprotocol: DEBUG
+    org.springframework.ai.autoconfigure: DEBUG
