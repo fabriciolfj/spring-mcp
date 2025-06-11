@@ -1,11 +1,10 @@
 {
   "mcpServers": {
     "filesystem": {
-      "command": "npx",
+      "command": "/home/spark/.sdkman/candidates/java/current/bin/java",
       "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/home/spark/Documentos/exemplo"
+        "-jar",
+        "/home/spark/Documentos/repositorios/spring-mcp-server/build/libs/mcp-server-0.0.1-SNAPSHOT.jar"
       ]
     }
   }
