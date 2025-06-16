@@ -7,8 +7,12 @@ spring:
         type: SYNC
         toolcallback:
           enabled: true
-        stdio:
-          servers-configuration: classpath:mcp-servers.json
+        sse:
+          connections:
+            themeparks:
+              url: http://localhost:3001
+        #stdio:
+          #servers-configuration: classpath:mcp-servers.json
 
 
 logging:
